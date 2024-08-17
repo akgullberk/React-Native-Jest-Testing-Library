@@ -31,12 +31,24 @@ exports[`should match with snapshot 1`] = `
   onStartShouldSetResponder={[Function]}
   style={
     {
+      "alignItems": "center",
+      "backgroundColor": "blue",
+      "borderRadius": 10,
+      "justifyContent": "center",
+      "margin": 10,
       "opacity": 1,
+      "padding": 10,
     }
   }
 >
-  <Text>
-    asd
-  </Text>
+  <Text
+    style={
+      {
+        "color": "white",
+        "fontWeight": "bold",
+      }
+    }
+    testID="button-title"
+  />
 </View>
 `;
