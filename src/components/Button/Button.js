@@ -1,9 +1,9 @@
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 
-const Button = ({title}) => {
+const Button = ({title,onClick}) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity testID='button-touchable' style={styles.container} onPress={onClick}>
         <Text testID='button-title' style={styles.title}>{title}</Text>
     </TouchableOpacity>
   )
