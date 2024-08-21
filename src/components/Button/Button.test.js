@@ -25,3 +25,9 @@ test('should render title correctly', () => {
         expect(mockFunction).toBeCalled()
 
         })
+
+    test('should render given theme style', () => {
+         const comp = render(<Button/>) 
+
+         const buttonContainer = comp.getByTestId("button-touchable").props;
+        })
